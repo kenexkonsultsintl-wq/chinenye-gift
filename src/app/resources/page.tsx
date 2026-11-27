@@ -51,7 +51,7 @@ export default function ResourcesPage() {
             </p>
             <p className="mt-4 max-w-[56ch] text-lg">
               This practical introductory guide will help you identify common weaknesses in roles, reporting,
-              documentation, people systems and execution — and decide what to fix first.
+              documentation, people systems and execution, and decide what to fix first.
             </p>
             <div className="mt-8">
               {site.flags.guideReady ? (
@@ -100,7 +100,7 @@ export default function ResourcesPage() {
         <section className={`${wrap} py-20`}>
           <h2 className="text-3xl sm:text-4xl">Get practical insights in your inbox.</h2>
           <p className="mt-4 max-w-[56ch] text-lg">
-            Occasional lessons on business structure, workforce decisions, growth and founder experiences — useful
+            Occasional lessons on business structure, workforce decisions, growth and founder experiences. Useful
             ideas without unnecessary noise.
           </p>
         </section>

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 const wrap = "mx-auto max-w-[1200px] px-5 sm:px-8";
+const linkClass = "font-bold text-flame underline underline-offset-4";
 
 // Links across the site use ?subject=...; map them to the form's categories.
 const subjectMap: Record<string, string> = {
@@ -44,33 +45,53 @@ export default async function ContactPage({
             <ArchPortrait src="/images/contact.jpg" alt="Portrait of Chinenye Gift" />
           </div>
 
-          <div className="mt-10 border-t-2 border-deep/25 pt-6">
-            <h2 className="text-2xl">Prefer email?</h2>
+          <div className="mt-10 border-t-2 border-flame/40 pt-6">
+            <h2 className="text-2xl">Prefer to reach me directly?</h2>
             <ul className="mt-3 space-y-1 text-lg">
               {site.email && (
                 <li>
-                  Email: <a href={`mailto:${site.email}`} className="font-bold text-sea underline underline-offset-4">{site.email}</a>
+                  Email: <a href={`mailto:${site.email}`} className={linkClass}>{site.email}</a>
                 </li>
               )}
+              <li>
+                Phone:{" "}
+                <a href={`tel:${site.phone.tel}`} className={linkClass}>
+                  {site.phone.display}
+                </a>
+              </li>
+              <li>
+                WhatsApp:{" "}
+                <a href={site.phone.whatsapp} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                  Message me on WhatsApp
+                </a>
+              </li>
               <li>Location: Port Harcourt, Nigeria</li>
-              {site.social.map((s) => (
-                <li key={s.href}>
-                  <a href={s.href} target="_blank" rel="noopener noreferrer" className="font-bold text-sea underline underline-offset-4">
-                    {s.label}
-                  </a>
-                </li>
-              ))}
             </ul>
+
+            {site.social.length > 0 && (
+              <>
+                <h3 className="mt-6 text-lg">Find me online</h3>
+                <ul className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-lg">
+                  {site.social.map((s) => (
+                    <li key={s.href}>
+                      <a href={s.href} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                        {s.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
 
-          <div className="mt-10 border-t-2 border-deep/25 pt-6">
+          <div className="mt-10 border-t-2 border-flame/40 pt-6">
             <h2 className="text-2xl">Book a focused strategy conversation.</h2>
             <p className="mt-3 max-w-[48ch]">
               Bring one clear challenge. We will use the session to understand your situation, identify priorities and
               discuss practical next steps.
             </p>
             <p className="mt-4">
-              <Link href="/book" className="font-bold text-sea underline underline-offset-4">
+              <Link href="/book" className={linkClass}>
                 View consultation options
               </Link>
             </p>

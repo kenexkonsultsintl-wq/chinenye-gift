@@ -59,7 +59,7 @@ export async function POST(req: Request) {
       from,
       to: [to],
       reply_to: email,
-      subject: `Website enquiry: ${labels[category]} — ${name}`,
+      subject: `Website enquiry: ${labels[category]} | ${name}`,
       text: lines.join("\n"),
     }),
   });

@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: "Thank you | Chinenye Gift", robots: 
 export default function ThankYouPage() {
   return (
     <section className="mx-auto max-w-[1200px] px-5 py-24 sm:px-8">
-      <h1 className="max-w-3xl text-4xl sm:text-5xl">Thank you — your message has been received.</h1>
+      <h1 className="max-w-3xl text-4xl sm:text-5xl">Thank you. Your message has been received.</h1>
       <p className="mt-5 max-w-[56ch] text-lg">
         We will review your enquiry and respond using the contact details you provided. In the meantime, explore more
         of Chinenye’s work and resources.

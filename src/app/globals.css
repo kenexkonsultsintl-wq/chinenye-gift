@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
-/* Design tokens from the Chinenye Gift blueprint */
+/* Design tokens: burnt orange is the main brand colour, emerald/sea is the complement */
 @theme inline {
   --color-sea: #008c83;
   --color-deep: #004f4a;
-  --color-flame: #f26a21;
+  --color-flame: #c24e00;
   --color-ivory: #fff7ec;
   --color-ink: #263238;
   --color-mist: #ddf5f1;
@@ -35,9 +35,14 @@ h1, h2, h3 {
   text-rendering: optimizeLegibility;
 }
 
+/* Burnt orange is the lead colour: selection and focus use it */
+::selection {
+  background: var(--color-flame);
+  color: #ffffff;
+}
 
 :focus-visible {
-  outline: 3px solid var(--color-sea);
+  outline: 3px solid var(--color-flame);
   outline-offset: 3px;
   border-radius: 4px;
 }

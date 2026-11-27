@@ -87,7 +87,7 @@ export default function AboutPage() {
           </h1>
           <div className="mt-6 max-w-[58ch] space-y-4 text-lg">
             <p>
-              I am Chinenye Gift Ekene Chukwuocha — a business and workforce strategist, recruitment consultant,
+              I am Chinenye Gift Ekene Chukwuocha, a business and workforce strategist, recruitment consultant,
               business growth advisor, entrepreneur and founder of Kenex Konsults International.
             </p>
             <p>
@@ -153,7 +153,7 @@ export default function AboutPage() {
 
       <Chapter title="Opportunity is powerful. Preparation makes it usable.">
         <p>
-          The challenges we observed contributed to the development of Kenex Business School — a practical learning
+          The challenges we observed contributed to the development of Kenex Business School, a practical learning
           platform focused on skills that help graduates, professionals and business-development personnel perform in
           real workplaces.
         </p>
@@ -197,8 +197,7 @@ export default function AboutPage() {
 
       <Chapter title="Building a company that can work beyond its founder." tint>
         <p>
-          One of my current priorities is helping Kenex become a more structured, founder-independent organisation —
-          one where capable teams can implement work while I focus on direction, strategy, management and growth.
+          One of my current priorities is helping Kenex become a more structured, founder-independent organisation, one where capable teams can implement work while I focus on direction, strategy, management and growth.
         </p>
         <p>
           This has also inspired me to build Chinenye Gift as an independent personal brand: a space for my ideas,

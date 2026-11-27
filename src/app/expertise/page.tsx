@@ -120,7 +120,7 @@ export default function ExpertisePage() {
         </h1>
         <p className="mt-6 max-w-[62ch] text-lg">
           Businesses do not all struggle for the same reasons. Before recommending recruitment, training, restructuring
-          or commercial intervention, I work to understand the real constraint — then identify practical steps forward.
+          or commercial intervention, I work to understand the real constraint, then identify practical steps forward.
         </p>
         <div className="mt-8">
           <ButtonLink href="/book">Book a discovery consultation</ButtonLink>

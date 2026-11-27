@@ -13,15 +13,32 @@ export const site = {
     { label: "Resources", href: "/resources" },
     { label: "Insights", href: "/insights" },
   ],
-  // [VERIFY] before launch
   links: {
     kenex: "https://www.kenexkonsultsintl.com",
     phCareerConnect: "https://phcareerconnectandjobfair.com",
+    kenexLinkedIn: "https://www.linkedin.com/company/kenex-konsults-international/",
+    kenexLinktree: "https://linktr.ee/kenexkonsultsinternational",
+    workplaceReality: "https://www.youtube.com/@workplace-realities",
   },
-  // [TO SUPPLY] - rendered only when set
+  // [TO SUPPLY] final email - rendered only when set
   email: null as string | null,
-  social: [] as { label: string; href: string }[],
-  // Blueprint: hide until the guide PDF, consent form and delivery email exist.
+  phone: {
+    display: "+234 906 835 6851",
+    tel: "+2349068356851",
+    whatsapp: "https://wa.me/2349068356851",
+  },
+  social: [
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/chinenye-gift-anyanso-6b9a43191",
+    },
+    { label: "Instagram", href: "https://www.instagram.com/hrextrordinary/" },
+    {
+      label: "Facebook",
+      href: "https://www.facebook.com/chinenyegift.anyanso/",
+    },
+    { label: "YouTube", href: "https://www.youtube.com/@chinenyegift" },
+  ] as { label: string; href: string }[],
   flags: {
     guideReady: false,
     legalReady: false,

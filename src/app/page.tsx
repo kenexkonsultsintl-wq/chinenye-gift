@@ -56,7 +56,7 @@ export default function Home() {
           </h1>
           <div className="mt-6 max-w-[56ch] space-y-4 text-lg">
             <p>
-              I’m Chinenye Gift Ekene Chukwuocha — a business and workforce strategist, recruitment consultant,
+              I’m Chinenye Gift Ekene Chukwuocha, a business and workforce strategist, recruitment consultant,
               business growth advisor and founder of Kenex Konsults International.
             </p>
             <p>
@@ -110,7 +110,7 @@ export default function Home() {
       {/* Story */}
       <section className="bg-mist/60">
         <div className={`${wrap} py-20`}>
-          <h2 className="max-w-2xl text-3xl sm:text-4xl">I followed the problems — and built solutions.</h2>
+          <h2 className="max-w-2xl text-3xl sm:text-4xl">I followed the problems and built solutions.</h2>
           <ol className="mt-12 grid gap-10 border-deep/20 md:grid-cols-4 md:gap-6 md:border-t md:pt-0">
             {story.map((s) => (
               <li key={s.stage} className="relative border-l-2 border-deep/20 pl-6 md:border-l-0 md:pl-0 md:pt-8">
