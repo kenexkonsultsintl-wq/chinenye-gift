@@ -25,5 +25,6 @@ export const site = {
   flags: {
     guideReady: false,
     legalReady: false,
+    newsletterReady: false,
   },
 };

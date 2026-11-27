@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArchPortrait } from "@/components/ArchPortrait";
 import { ContactForm } from "@/components/ContactForm";
 import { site } from "@/lib/site";
+export const instant = false;
 
 export const metadata: Metadata = {
   title: "Contact Chinenye Gift | Advisory, Speaking & Collaboration",
